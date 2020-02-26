@@ -29,7 +29,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => "Sistema Integrado",
+        'brandLabel' => "EA Yii2",
         'brandUrl' => "/",
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',

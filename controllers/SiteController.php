@@ -12,6 +12,7 @@ use app\models\ContactForm;
 use app\models\FormAlumnos;
 use app\models\Alumnos;
 
+
 class SiteController extends Controller
 {
     /**
@@ -79,7 +80,7 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            return $this->redirect(array('site/create'));
         }
 
         $model->password = '';

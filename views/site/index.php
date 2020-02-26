@@ -2,9 +2,9 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'CASE S.A.';
+$this->title = 'EA Yii2';
 ?>
 <div class="site-index">
 
-    
+        
 </div>
