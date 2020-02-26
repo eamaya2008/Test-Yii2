@@ -1,6 +1,9 @@
 html,
 body {
     height: 100%;
+    
+}
+#main-ly{
     background-image: url(/img/china-bg-home.jpg);
     background-size: 100%;
     background-repeat: no-repeat;

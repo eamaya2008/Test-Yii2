@@ -67,6 +67,18 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    public function actionPanel()
+    {
+        $this->layout='//second';
+        return $this->render('cPanel');
+    }
+
+    public function actionSbsettings()
+    {
+        $this->layout='//second';
+        return $this->render('sbSettings');
+    }
+
     /**
      * Login action.
      *
@@ -80,7 +92,7 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->redirect(array('site/create'));
+            return $this->redirect(array('site/panel'));
         }
 
         $model->password = '';
